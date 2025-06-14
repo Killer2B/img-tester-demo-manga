@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>عرض صورة محمية</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>صورة محمية</h1>
+  <p>الصورة أدناه يتم تحميلها من سكربت PHP محمي بتوقيع وتاريخ انتهاء</p>
+
+  <!-- ✅ غيّر هذا الرابط إلى الرابط الذي تولده من PHP -->
+  <img src="https://steam-s.rf.gd/secure-view.php?id=1" alt="Protected Image">
+
+  <p>تم الحماية بواسطة توقيع مشفر وتاريخ انتهاء + حماية من Referer.</p>
+
+</body>
+</html>
